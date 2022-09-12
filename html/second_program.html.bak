@@ -1,0 +1,152 @@
+<html>
+	<head>
+		<title>HTML Day 2</title>
+	</head>
+	
+	<body>
+		<h1>1. Block Level Elements -</h1>
+
+		<h2>This is my second day of learning HTML</h2>
+		<p>this is a paragraph 1</p>
+		<p>this is a paragraph 2</p>
+		
+		<h2>Div Tag - </h2>
+		<div>this is div tag 1</div>
+		<div>this is div tag 2</div>
+		
+		<hr />
+		
+		<h1>2. Inline Elements -</h1>
+		<img src="https://www.pngitem.com/pimgs/m/121-1215316_fruit-group-fruit-png-transparent-png.png" width="300px" />
+		<img src="https://www.freepnglogos.com/uploads/fruits-png/fruits-basket-clipart-collection-5.png" width="300px" />
+		<p style="background-color:red;">this is a paragraph.</p>
+		<a style="background-color:red;" href="#">Demo Link</a>
+		<a href="#">Demo Link</a>
+		<a href="#">Demo Link</a>
+		
+		
+		<h2>Span Tag - </h2>
+		<span>this is a span tag 1</span>
+		<span>this is a span tag 2</span>
+		
+		<hr />
+		
+		<h1>Text Formatting -></h1>
+		<h2>1. Bold -</h2>
+		<p>Shubham likes to play <b>cricket.</b></p>
+		
+		<h2>2. Italic -</h2>
+		<p>Shubham likes to play <i>cricket.</i></p>
+		
+		<h2>3. Underline -</h2>
+		<p>Shubham likes to play <u>cricket.</u></p>
+		
+		<h2>4. Strikethrough -</h2>
+		<p>Shubham likes to play <strike>cricket.</strike> hocky.
+		
+		<h2>5. Emphasized -</h2>
+		<p>Shubham likes to play <em>cricket.</em></p>
+		
+		<h2>6. Strong -</h2>
+		<p>Shubham likes to play <strong>cricket.</strong></p>
+		
+		<h2>7. Superscript -</h2>
+		<p>2<sup>5</sup></p>
+		
+		<h2>8. Subscript -</h2>
+		<p>2<sub>5</sub></p>
+		
+		<hr />
+		
+		<h1>HTML LISTS - </h1>
+		
+		<h2>Ordered List - (Sequence)</h2>
+		
+		<!-- 1. Shapoo
+		2. Shengadane
+		3. Mirchi
+		4. Maggi
+			i. Masala Maggie
+			ii. ..
+		4. Oil
+		5. Ambari Masala
+		6. Halad -->
+		
+		<ol>
+			<li>Shapoo</li>
+			<li>Shengadane</li>
+			<li>Mirchi</li>
+			<li>Maggi</li>
+				<ol>
+					<li>Masala Maggie</li>
+					<li>Normal Maggie</li>
+				</ol>
+			<li>Oil</li>
+			<li>Ambari Masala</li>
+			<li>Halad</li>
+		</ol>
+			
+		<hr />
+		
+		<h2>Unordered List - (No Sequence)</h2>
+		<ul>
+			<li>Shapoo</li>
+			<li>Shengadane</li>
+			<li>Mirchi</li>
+			<li>Maggi</li>
+				<ul>
+					<li>Masala Maggie (NOT FOR CHILDRENS)</li>
+					<li>Normal Maggie</li>
+				</ul>
+			<li>Oil</li>
+			<li>Ambari Masala</li>
+			<li>Halad</li>
+		</ul>
+		
+		<hr />
+		
+		<h1>Select Dropdown -</h1>
+		<select>
+			<option>---Select Your State---</option>
+			<option>Maharashtra</option>
+			<option>Gujarat</option>
+			<option>Rajasthan</option>
+			<option>Goa</option>
+		</select>
+		
+		<input type="week" />
+		
+		<hr />
+		
+		<h1>Working With MultiMedia - </h1>
+		
+		<h2>1. Image(Refer first_program.html)</h2>
+		<h2>2. Video - </h2>
+		<video width="100%" controls>
+			<source src="videos/video.avi"  type="video/avi" />
+			<source src="videos/video.mp4"  type="video/mp4" />
+		</video>
+		
+		<h2>3. Audio - </h2>
+		
+		<audio controls>
+			<source src="audio/bird.mp3"  type="audio/mp3" />
+		</audio>
+		
+		<h2>4. Iframe -</h2>
+		
+		<p>https://youtube.com/embed/videoId</p>
+		
+		<h3>4.1 Embed Youtube Video Using Iframe -</h3>
+		<!-- <iframe src="https://youtube.com/embed/K5w8IUXOjTY" 
+		width="100%" height="700px"
+		/> -->
+		
+		<h3>4.2 Embed Website Using Iframe -</h3>
+		<iframe src="https://maxotag.com" 
+		width="100%" height="400px"
+		/>		
+		
+	</body>
+
+</html>

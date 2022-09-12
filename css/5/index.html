@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS BOX MODEL</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* reset css */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #title {
+        text-align: center;
+        font-size: 50px;
+      }
+
+      .box {
+        background-color: aqua;
+        /* margin: 20px; */
+        /* margin: 30px 20px; */
+        /* margin: 30px 20px 10px 5px; */
+        margin: 30px;
+        /* margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+        margin-left: 30px; */
+
+        /* padding: 30px; */
+        /* padding: 30px 20px; */
+        padding: 30px 20px 10px 5px;
+        /* padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        padding-left: 30px; */
+
+        border: 2px dashed red;
+        /* solid, dashed, dotted */
+        /* border-style: solid;
+        border-width: 2px;
+        border-color: red; */
+
+        outline: 3px solid hotpink;
+        /* outline-style: solid;
+        outline-width: 3px;
+        outline-color: hotpink; */
+      }
+
+      #specialNews {
+        background-color: red;
+        color: yellow;
+      }
+
+      #firstTitle {
+        color: red;
+      }
+      #lastTitle {
+        color: blue;
+      }
+    </style>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+     -->
+  </head>
+  <body>
+    <h1 id="title">
+      <span id="firstTitle">MaxoNews</span> <span id="lastTitle">Portal</span>
+    </h1>
+
+    <marquee id="specialNews" scrollamount="15">
+      <h2>
+        <b>BIGGEST UPDATE :</b> Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Optio, possimus non ratione cupiditate minus enim
+        quisquam quod vitae. Perferendis placeat asperiores minima consequatur
+        maxime sapiente itaque ducimus labore! Assumenda deleniti vel nisi
+        tempore quos impedit amet a iusto doloribus consequuntur, perspiciatis,
+        quo quaerat illo illum enim magnam voluptate vero, animi molestias
+        laborum natus doloremque voluptatum suscipit? Optio voluptate repellat
+        hic soluta, laborum minima? Repellat sunt adipisci, deserunt eius ab
+        excepturi sit rem possimus voluptatum, ipsum, atque deleniti a commodi
+        quas dolorum beatae quisquam numquam cum rerum perspiciatis corrupti
+        quos quae? Laborum non eius possimus commodi recusandae nostrum iusto
+        accusamus aspernatur, saepe ea quod impedit aut ipsum voluptates soluta
+        at consequatur est molestias inventore repellat architecto. Aliquam
+        nobis, neque esse, animi laborum ex hic porro eum reiciendis dolore
+        molestias ea odio! Adipisci enim soluta repellat rem culpa corrupti
+        porro! Repellat ipsum reiciendis, neque sequi autem, doloremque fugit
+        laborum cumque voluptatibus laudantium repudiandae quaerat nihil at odit
+        natus architecto nobis labore. Accusantium hic sint iusto exercitationem
+        voluptates illo rem saepe. Libero adipisci cum magni sapiente unde odio
+        maxime quo officiis accusantium! Cupiditate omnis blanditiis reiciendis
+        dicta nulla necessitatibus officia aliquid culpa repellat mollitia ipsum
+        ullam suscipit error velit maiores, quibusdam possimus veniam magnam.
+        Nesciunt error necessitatibus soluta nam saepe aspernatur quod voluptas
+        assumenda vel architecto molestiae quidem harum a delectus quas,
+        accusamus repellat sed iure odit minus voluptatem nulla dolor. Dolorum
+        assumenda quibusdam itaque dolorem incidunt perferendis et praesentium
+        qui optio vitae architecto nostrum omnis neque accusantium quam nam
+        aspernatur, iure in repellendus eius autem voluptates? Pariatur iure
+        labore magnam, quis architecto dolor quisquam itaque vero temporibus
+        quibusdam nulla rerum repellendus autem velit quo? Accusamus maiores
+        vero rerum quo velit recusandae asperiores eaque nobis, suscipit commodi
+        voluptatibus quas esse quasi beatae, non sequi porro ad ab sint!
+        Possimus expedita reprehenderit aut nostrum, adipisci repellendus
+        explicabo ducimus soluta officia quidem dolor illo amet debitis
+        voluptatum, consectetur perspiciatis doloremque. Aliquam numquam
+        reprehenderit eum consectetur corporis? Delectus, quia minima aliquam
+        quae, ut qui iusto sunt, labore maiores ipsa maxime fugit dolores?
+        Obcaecati recusandae natus consequatur voluptates ab fugit sint
+        incidunt, eum earum ea facere dicta, animi corrupti ut nemo itaque quod
+        vitae possimus neque quas veritatis eius. Totam eum reprehenderit alias
+        et quos suscipit libero ad odio voluptatem excepturi architecto nam
+        facilis nesciunt mollitia ab ipsum aut ex dolorem hic velit, fugit quod
+        vel eos sunt! Possimus at officia, minus laudantium soluta accusamus
+        dolore repellat molestias excepturi, blanditiis nesciunt nam illo
+        laborum a tenetur ut aliquam sunt illum saepe nulla quibusdam commodi
+        laboriosam cupiditate voluptas! Dicta iste aspernatur facilis cumque
+        adipisci, corporis molestiae et dolorem, distinctio reprehenderit quam
+        illum explicabo suscipit a non, laudantium in! Laboriosam, sint
+        inventore eum possimus quidem, rem dolorem veritatis magnam quaerat
+        ipsum exercitationem numquam. Impedit placeat fugiat sit animi quisquam,
+        quibusdam, iusto repudiandae cumque dolor mollitia quasi quam ullam
+        reprehenderit odit ipsam ad perspiciatis architecto! Beatae minima vel
+        magnam sequi provident, doloremque animi ipsam! Sit quis enim aliquid
+        praesentium ipsam. Quidem veritatis tempore, eligendi aperiam maiores
+        natus labore nostrum autem.
+      </h2>
+    </marquee>
+
+    <div class="box">
+      <h1>
+        BJP leader Sonali Phogat’s autopsy report says ‘multiple blunt force
+        injuries on body
+      </h1>
+      <p>
+        The Goa Police Thursday registered a murder case to probe the death of
+        BJP leader Sonali Phogat. The 42-year-old actor-turned-politician died
+        of a suspected heart attack in Goa on Tuesday with her family
+        questioning the circumstances leading to her death. Inspector General of
+        Police Omvir Singh Bishnoi said, “Based on the complaint filed by the
+        brother of the deceased, an FIR under Section 302 (murder) has been
+        registered at the Anjuna Police Station.”
+      </p>
+    </div>
+    <div class="box">
+      <h1>Out of power, Imran Khan continues to be powerful in Pakistan</h1>
+      <p>
+        Pakistan is on the edge again. Its economy is broken and Imran Khan is
+        threatening to set the house on fire if the army leadership does not
+        pave his way back to power. Three factors underlying its dysfunctional
+        state have brought about this situation. <br />
+        <br />
+        First, the Pakistani economy, prone to periodic crises because of its
+        structural problems — notably the burdens imposed by its adversarial
+        posture against India — has been hit hard by the pandemic and the
+        Ukraine war. Inflation is high, the Pakistan rupee has nosedived,
+        foreign exchange reserves are worth about six weeks’ imports and nearly
+        $40 billion borrowing is required to meet the external financing needs
+        in the current financial year.
+      </p>
+    </div>
+    <div class="box">
+      <h1>
+        BJP leader Sonali Phogat’s autopsy report says ‘multiple blunt force
+        injuries on body
+      </h1>
+      <p>
+        The Goa Police Thursday registered a murder case to probe the death of
+        BJP leader Sonali Phogat. The 42-year-old actor-turned-politician died
+        of a suspected heart attack in Goa on Tuesday with her family
+        questioning the circumstances leading to her death. Inspector General of
+        Police Omvir Singh Bishnoi said, “Based on the complaint filed by the
+        brother of the deceased, an FIR under Section 302 (murder) has been
+        registered at the Anjuna Police Station.”
+      </p>
+    </div>
+    <div class="box">
+      <h1>
+        BJP leader Sonali Phogat’s autopsy report says ‘multiple blunt force
+        injuries on body
+      </h1>
+      <p>
+        The Goa Police Thursday registered a murder case to probe the death of
+        BJP leader Sonali Phogat. The 42-year-old actor-turned-politician died
+        of a suspected heart attack in Goa on Tuesday with her family
+        questioning the circumstances leading to her death. Inspector General of
+        Police Omvir Singh Bishnoi said, “Based on the complaint filed by the
+        brother of the deceased, an FIR under Section 302 (murder) has been
+        registered at the Anjuna Police Station.”
+      </p>
+    </div>
+    <div class="box">
+      <h1>
+        BJP leader Sonali Phogat’s autopsy report says ‘multiple blunt force
+        injuries on body
+      </h1>
+      <p>
+        The Goa Police Thursday registered a murder case to probe the death of
+        BJP leader Sonali Phogat. The 42-year-old actor-turned-politician died
+        of a suspected heart attack in Goa on Tuesday with her family
+        questioning the circumstances leading to her death. Inspector General of
+        Police Omvir Singh Bishnoi said, “Based on the complaint filed by the
+        brother of the deceased, an FIR under Section 302 (murder) has been
+        registered at the Anjuna Police Station.”
+      </p>
+    </div>
+
+    <h1>CSS Float -</h1>
+
+    <div id="float">
+      <p>folating element</p>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe
+      et fugiat laudantium! Temporibus explicabo deleniti consequatur minima ea
+      ex beatae, accusantium suscipit, enim reiciendis illum quibusdam ullam
+      vero debitis vitae maxime consequuntur porro asperiores exercitationem rem
+      possimus blanditiis! Nostrum quae eum, odio exercitationem praesentium
+      molestias? Officia quaerat quas porro minima sapiente debitis excepturi
+      est modi, cum, quia accusantium tempora at commodi nemo earum animi atque
+      veritatis dolor repellat distinctio quibusdam. Consectetur, nihil.
+      Tempore, suscipit? Facilis ad eos corrupti tenetur debitis explicabo
+      maxime reiciendis non voluptas possimus similique, sunt officiis, ea
+      consequuntur iste magnam veniam! Ipsa explicabo distinctio, vero veniam
+      quae cumque, odit soluta quisquam ipsam illo mollitia non aspernatur!
+      Harum dignissimos quibusdam enim nulla id, minus perspiciatis voluptatum
+      quasi porro dolores, illum tempore nesciunt alias delectus? Ratione
+      consequatur voluptates modi? Perspiciatis sequi praesentium ducimus eum
+      expedita voluptate assumenda sunt, dolorem facilis repudiandae suscipit
+      nostrum consequuntur delectus, cum modi cupiditate eius consequatur dicta
+      temporibus velit voluptates laboriosam placeat. Necessitatibus, fuga vitae
+      quidem quaerat minima assumenda deserunt reiciendis sed inventore ad odio
+      atque distinctio sapiente aperiam suscipit ex illo perferendis nobis earum
+      mollitia. Assumenda praesentium temporibus autem, est itaque officia
+      laudantium sint, maxime magnam fuga quasi numquam enim asperiores quisquam
+      ipsam. Quo magni magnam porro, alias, reprehenderit libero unde ab
+      deserunt nesciunt quae iure possimus hic consequuntur excepturi
+      dignissimos! Eligendi sint assumenda aliquam, nemo dolorum ex voluptatem
+      explicabo ipsam laboriosam architecto pariatur molestiae tempore possimus
+      nesciunt quidem! Fugiat fugit deleniti id laboriosam eos fuga
+      reprehenderit necessitatibus officiis quis error esse, doloribus tempora,
+      cupiditate eius placeat sit ratione ducimus natus quibusdam cumque labore
+      reiciendis autem. In accusamus eos autem! Officiis, et autem aperiam
+      possimus numquam ad nulla, ipsum, deserunt magnam officia veritatis
+      blanditiis dolorum ducimus unde earum ratione non nam explicabo quo
+      laudantium vitae reprehenderit quae? Amet quam, voluptatibus nihil
+      architecto eius sint fugiat error nobis incidunt nisi nostrum tempore.
+      Numquam, voluptas soluta neque officia provident sed quod. Veritatis
+      perspiciatis aut saepe dignissimos animi aliquam, nobis et magni excepturi
+      earum neque qui rerum cum fuga quidem temporibus odit commodi
+      necessitatibus eligendi culpa error fugiat impedit ipsa dolores!
+      Praesentium autem rem temporibus reprehenderit quis quisquam ducimus eius
+      aspernatur! Possimus libero autem placeat perspiciatis sequi, optio
+      aperiam, id aliquam magnam repellendus nam voluptas doloribus consequuntur
+      aspernatur, sit quisquam voluptatem velit pariatur! Reprehenderit adipisci
+      vero vitae dicta, impedit asperiores aut delectus perferendis cumque.
+      Porro, officia. Quisquam optio ab numquam, cupiditate id, eos
+      necessitatibus in ex reiciendis quis, veritatis molestias? Fuga placeat
+      libero nulla impedit explicabo repudiandae iusto quisquam quos aliquid vel
+      mollitia eveniet perspiciatis, molestias reiciendis, omnis praesentium
+      voluptatum minus laboriosam aspernatur natus corrupti et, esse dignissimos
+      fugiat? Omnis, quo nam? Voluptates aperiam sint quod necessitatibus
+      veritatis. Ea consectetur temporibus corrupti, quisquam dolor nemo hic
+      quis dolores similique, ipsa aliquid possimus voluptatem facilis
+      voluptatum voluptatibus quos ipsam? Possimus voluptatibus doloremque vel
+      veniam porro deleniti omnis, assumenda ex, voluptatem sunt necessitatibus
+      vero id aliquid nulla ut maxime nobis libero eum consectetur! Odio eos
+      eligendi earum fugit consequatur ipsam illo quam aut laborum labore,
+      doloribus impedit at.
+    </p>
+
+    <hr />
+    <h1>CSS Position -</h1>
+    <h2>1. Relative -</h2>
+
+    <div id="relative">
+      <p>hello, i'm child of div</p>
+    </div>
+
+    <h2>2. Absolute -</h2>
+
+    <div id="absolute">
+      <p>hello, i'm child of div</p>
+      <h3>hello, i'm child of div</h3>
+    </div>
+
+    <h2>3. Fixed - (refer to running headline)</h2>
+
+    <h2>4. Sticky -</h2>
+
+    <img
+      id="sticky"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1022px-WhatsApp.svg.png"
+      alt="whatsapp support icon"
+      width="50px"
+    />
+
+    <h2>5. Static -</h2>
+
+    <h1 id="static">Random Text</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, inventore!
+      Iusto explicabo obcaecati cumque in tempora deleniti quam. Quibusdam
+      necessitatibus consectetur repellat totam dolorum debitis corporis vitae
+      enim? Perferendis, officia commodi quos quis eligendi in labore reiciendis
+      quae quidem a vel iste officiis corrupti. Vel consectetur quisquam,
+      blanditiis hic commodi maiores deleniti tempora, illo et adipisci,
+      doloremque debitis perspiciatis. At illo sit eligendi architecto nisi
+      magnam quas provident corporis, aperiam ipsum dolor tenetur illum
+      voluptate, deserunt sint cumque hic suscipit exercitationem maxime.
+      Corporis, qui. Facilis ipsum quos qui temporibus quod iste cupiditate
+      recusandae laudantium eligendi dolores porro aspernatur est nihil, veniam
+      ratione eaque officiis error enim. Reiciendis minima suscipit cumque
+      nostrum quam maiores dignissimos iusto vel sit facilis? Delectus illum nam
+      nulla expedita nostrum officia! Suscipit provident numquam accusamus,
+      corporis perspiciatis aut odio molestiae iure beatae voluptatibus adipisci
+      animi at nulla dicta eligendi facere veritatis saepe nostrum mollitia?
+      Asperiores, ut aspernatur. Doloremque quod architecto saepe hic. Harum,
+      magni provident hic molestiae reprehenderit ea possimus quam deleniti
+      iusto ratione corporis eligendi perspiciatis quisquam dignissimos officia
+      incidunt. Veniam distinctio tenetur inventore nobis nihil illum minus,
+      praesentium ipsum placeat, sed optio, quas odit consequatur. Expedita,
+      praesentium, debitis quidem odio dolorum accusamus facilis minima veniam
+      sint alias, sequi corporis ad nihil. Quae est qui hic, mollitia provident
+      velit tenetur, tempore quaerat labore impedit voluptatibus in ad sequi
+      totam maxime aliquam dolor unde dicta assumenda consequuntur, quam
+      similique. Laboriosam, impedit? Ipsum a ipsam quasi asperiores placeat
+      suscipit alias. Cupiditate magnam numquam tempora eos eius! Doloribus
+      recusandae provident et, alias facere nostrum ducimus reiciendis quod
+      quisquam vero nemo doloremque temporibus laborum incidunt fuga, quasi
+      maiores cupiditate enim. Blanditiis laudantium adipisci voluptas libero,
+      fugit delectus nostrum est eveniet maiores eum labore, natus eaque ipsam
+      dolor voluptatibus debitis commodi eligendi, repudiandae id saepe quod ea?
+      Blanditiis asperiores amet, unde obcaecati sunt officia eos atque fugit,
+      doloremque ut autem eaque eum a id iure ab. Mollitia nesciunt rerum fugit
+      tenetur, quis adipisci obcaecati officia commodi similique consequatur
+      exercitationem culpa, illum dicta, sapiente maiores quibusdam cupiditate
+      nihil qui quos odio vero quasi enim. Illum ea cumque maxime eos amet sunt
+      at voluptas quam aliquam, perspiciatis cum tempora provident, enim quasi
+      ab sapiente fugiat ex dolore dolores unde animi minima. Quas enim iure
+      commodi minus ducimus ut maiores dolorum dolore qui, eligendi quasi esse
+      exercitationem in culpa beatae ab, perspiciatis repellat numquam quaerat
+      aliquam error, fugiat recusandae tempore labore? Aspernatur temporibus
+      repudiandae dolorem, dignissimos laudantium nobis repellendus vel veniam
+      quaerat, adipisci pariatur iste voluptates expedita! Eum at architecto cum
+      vel, nam minima veniam suscipit officia excepturi consequuntur ab dolor
+      qui, quas saepe laudantium quos officiis, facere sint aliquam ducimus
+      repellat corrupti ex. Cupiditate tempora culpa a accusamus reprehenderit
+      asperiores nobis eveniet alias ipsum soluta vitae tenetur sapiente sint
+      corporis animi dolorem consectetur, debitis ut est quasi? Veniam atque
+      officiis, rem reiciendis iusto corrupti nesciunt illum, at quia saepe illo
+      quo, cumque quod recusandae accusantium? Aspernatur hic similique delectus
+      excepturi assumenda autem eum. Esse architecto reprehenderit soluta nihil
+      perspiciatis quibusdam optio at. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Accusantium, minima tenetur error dignissimos numquam
+      reprehenderit repudiandae unde quia excepturi doloribus aspernatur
+      expedita ipsum maxime culpa exercitationem provident animi itaque!
+      Consectetur voluptates eveniet aperiam, rem recusandae voluptate
+      temporibus exercitationem veritatis inventore nulla odio atque aut odit
+      voluptatum vel praesentium, quo aliquam ex voluptas fuga veniam numquam
+      ullam repudiandae? Numquam, recusandae saepe. Sunt nisi similique
+      voluptates facere id. A ut sunt dolores consectetur explicabo, tenetur
+      fugiat corrupti, reiciendis voluptatum odio dolorum assumenda quis hic
+      ducimus soluta amet voluptatem voluptate dicta molestiae dolorem debitis!
+      Pariatur earum, nostrum autem expedita cumque molestiae natus amet eos
+      assumenda odit officiis culpa, ducimus quia similique totam, rem
+      repudiandae iste quidem quibusdam dicta nemo necessitatibus soluta eius
+      repellendus? Quasi quam tenetur consequuntur mollitia accusantium ratione
+      optio natus magnam nisi eum deleniti repudiandae soluta, facere possimus
+      laudantium distinctio omnis obcaecati perspiciatis similique sed tempora
+      minus cum? Voluptatum dolore natus eligendi fugiat, est nemo corporis et
+      deleniti, id iure sint rerum reiciendis neque eveniet aperiam, modi
+      tenetur quam dolor cumque accusantium laboriosam autem expedita. Nemo
+      cupiditate velit incidunt placeat nobis voluptas totam officiis quisquam
+      voluptatum neque et asperiores omnis nam impedit, laboriosam fugiat
+      necessitatibus quo aperiam accusamus! Odio beatae, sit iste vel quibusdam
+      quidem laborum, alias optio cum animi expedita eaque ullam dolore eligendi
+      quo commodi necessitatibus odit? Eligendi adipisci minus illo veniam
+      aliquid inventore, ducimus pariatur repellendus dicta. Officia vel
+      suscipit deserunt veritatis sunt? Quas alias vel, doloribus explicabo
+      dolorem illo fugit! Minima, eveniet dolores unde facilis dolorem tempore
+      eius quia doloribus, corrupti soluta delectus id eaque aliquid. Facere
+      impedit optio repudiandae non perferendis, officiis distinctio quis
+      consequatur, quos sed nulla ullam quae et! Sint aperiam quae nihil eum
+      natus minus sunt? Obcaecati deserunt error autem nobis iste consequuntur
+      ea ad, architecto voluptates temporibus sed sit assumenda earum. Soluta
+      itaque saepe quisquam maxime tempora veritatis alias consequuntur ipsum
+      quas delectus repellendus nihil aspernatur non a vero velit perspiciatis,
+      maiores excepturi doloremque magni cupiditate quidem ducimus! Ipsum magni
+      commodi error eos corporis, omnis voluptates tempora sed odit reiciendis?
+      Delectus maxime enim laboriosam, quos dolorum ducimus recusandae
+      voluptatibus, nam laborum eum sint? Eaque magnam unde fuga neque commodi
+      at perferendis, nobis reiciendis ea nihil quos expedita officiis ipsa
+      accusantium veniam adipisci dolor consectetur, sapiente quidem. Cumque
+      quos, commodi fugit, at dolorem, eaque illo sed quo deleniti dignissimos
+      delectus laborum est rerum earum praesentium ipsam animi! Inventore id
+      facilis doloremque temporibus, in sint? Consequatur illum quidem odit. At
+      ut, saepe qui, unde velit quam harum aliquid debitis iusto eius tenetur
+      officiis libero nobis sed accusamus, dolorem distinctio dicta atque
+      impedit dolor omnis ad sit veritatis doloribus? Et dolor officiis
+      excepturi nam nesciunt molestias autem quidem ipsa a, cupiditate minima
+      deleniti necessitatibus rerum nobis corporis unde nisi assumenda. Ipsam
+      mollitia expedita quis ea explicabo labore amet tenetur voluptatum. Ab
+      exercitationem officiis consequuntur, maiores enim veniam quidem at ipsam
+      illum illo quam. Odio dolorem vel aliquam. Optio sunt perferendis eum
+      perspiciatis fuga non temporibus, nam aut harum nihil totam quo at velit?
+      Pariatur, alias?
+    </p>
+  </body>
+</html>

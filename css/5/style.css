@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Oleo+Script+Swash+Caps:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+#title {
+  font-family: "Oleo Script Swash Caps", cursive;
+}
+
+.box h1 {
+  font-family: "Courgette", cursive;
+}
+
+.box p {
+  font-family: "Oswald", sans-serif;
+}
+
+#float {
+  background-color: red;
+  float: right;
+  /* text-align: right; */
+
+  padding: 3rem;
+  margin: 3rem 0;
+}
+
+/* ----------------CSS Positions----------------------- */
+/* 1. relative */
+
+#relative {
+  background-color: red;
+  padding: 2rem;
+  margin: 2rem;
+  height: 8rem;
+}
+
+#relative p {
+  background-color: white;
+  border: 1px solid black;
+  position: relative;
+  /* left: 5rem; */
+  right: 2rem;
+  top: 3rem;
+  /* bottom: 2rem; */
+}
+
+#absolute {
+  background-color: red;
+  padding: 2rem;
+  margin: 2rem;
+  height: 8rem;
+}
+
+#absolute p {
+  background-color: white;
+  border: 1px solid black;
+
+  position: absolute;
+  top: 5rem;
+  right: 3rem;
+}
+
+/* fixed */
+#specialNews {
+  position: fixed;
+  bottom: 0;
+}
+
+#sticky {
+  position: sticky;
+  top: 5rem;
+}
+
+/* static - default flow of html */
+
+#static {
+  position: static;
+}

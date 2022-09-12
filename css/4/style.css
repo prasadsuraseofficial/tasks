@@ -1,0 +1,120 @@
+/* 
+1. Background image
+2. Text Align
+3. Z Index 
+4. Style Links & Lists
+
+height
+width
+min-width
+max-width
+min-height
+max-height
+*/
+
+body {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Taj_Mahal_in_India_-_Kristian_Bertel.jpg/375px-Taj_Mahal_in_India_-_Kristian_Bertel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#title {
+  /* background-color: powderblue; */
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  padding: 0.5rem;
+}
+
+#p1 {
+  position: absolute;
+  background-color: red;
+  z-index: 1009;
+  width: 50%;
+}
+
+#p2 {
+  position: absolute;
+  background-color: aqua;
+  width: 70%;
+  margin-top: -5rem;
+  z-index: 1008;
+}
+
+#button {
+  background-color: blueviolet;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  background-color: bisque;
+  padding: 2rem;
+}
+
+li {
+  background-color: green;
+  margin: 1rem;
+  padding: 1rem;
+
+  list-style-type: upper-roman;
+  /* list-style-type: none; */
+}
+
+#none {
+  list-style-image: url("https://interactive-examples.mdn.mozilla.net/media/examples/rocket.svg");
+  list-style-type: none;
+}
+
+#box {
+  /* max-width: 50vw;
+  max-height: 50vw; */
+
+  /* min-width: 50vw;
+  min-height: 50vw; */
+
+  /* width: 50vw;
+  height: 50vw; */
+  background-color: aqua;
+}
+
+#setDisplay {
+  background-color: orangered;
+  padding: 1rem;
+  margin: 1rem;
+
+  display: inline;
+}
+
+span {
+  background-color: blueviolet;
+}
+
+#line1 {
+  display: block;
+}
+
+#line2 {
+  margin: 1rem;
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+}
+
+#line3 {
+  display: none;
+}
+
+#inlineLink {
+  background-color: red;
+  text-decoration: none;
+  color: white;
+  border: 1px solid hotpink;
+
+  height: 40px;
+  width: 80px;
+  display: inline-block;
+}

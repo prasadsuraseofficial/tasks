@@ -1,0 +1,28 @@
+#box {
+  background-color: aqua;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+/* psuedo class */
+#box:hover {
+  background-color: red;
+}
+
+a:visited {
+  color: lightgrey;
+}
+
+/* psuedo elements */
+#psuedoElement {
+  font-size: 30px;
+}
+
+#psuedoElement::before {
+  content: "***********";
+}
+
+#psuedoElement::after {
+  content: "-----------------";
+}

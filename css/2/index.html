@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS BOX MODEL</title>
+
+    <style>
+      /* reset css */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #title {
+        text-align: center;
+        font-size: 50px;
+      }
+
+      .box {
+        background-color: aqua;
+        /* margin: 20px; */
+        /* margin: 30px 20px; */
+        margin: 30px 20px 10px 5px;
+        /* margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+        margin-left: 30px; */
+
+        /* padding: 30px; */
+        /* padding: 30px 20px; */
+        padding: 30px 20px 10px 5px;
+        /* padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        padding-left: 30px; */
+
+        border: 2px dashed red;
+        /* solid, dashed, dotted */
+        /* border-style: solid;
+        border-width: 2px;
+        border-color: red; */
+
+        outline: 3px solid hotpink;
+        /* outline-style: solid;
+        outline-width: 3px;
+        outline-color: hotpink; */
+      }
+
+      .box1 {
+        margin: 50px;
+      }
+
+      #specialNews {
+        background-color: red;
+        color: yellow;
+      }
+
+      #firstTitle {
+        color: red;
+      }
+      #lastTitle {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">
+      <span id="firstTitle">MaxoNews</span> <span id="lastTitle">Portal</span>
+    </h1>
+
+    <marquee id="specialNews" scrollamount="15">
+      <h2>
+        <b>BIGGEST UPDATE :</b> Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Optio, possimus non ratione cupiditate minus enim
+        quisquam quod vitae. Perferendis placeat asperiores minima consequatur
+        maxime sapiente itaque ducimus labore! Assumenda deleniti vel nisi
+        tempore quos impedit amet a iusto doloribus consequuntur, perspiciatis,
+        quo quaerat illo illum enim magnam voluptate vero, animi molestias
+        laborum natus doloremque voluptatum suscipit? Optio voluptate repellat
+        hic soluta, laborum minima? Repellat sunt adipisci, deserunt eius ab
+        excepturi sit rem possimus voluptatum, ipsum, atque deleniti a commodi
+        quas dolorum beatae quisquam numquam cum rerum perspiciatis corrupti
+        quos quae? Laborum non eius possimus commodi recusandae nostrum iusto
+        accusamus aspernatur, saepe ea quod impedit aut ipsum voluptates soluta
+        at consequatur est molestias inventore repellat architecto. Aliquam
+        nobis, neque esse, animi laborum ex hic porro eum reiciendis dolore
+        molestias ea odio! Adipisci enim soluta repellat rem culpa corrupti
+        porro! Repellat ipsum reiciendis, neque sequi autem, doloremque fugit
+        laborum cumque voluptatibus laudantium repudiandae quaerat nihil at odit
+        natus architecto nobis labore. Accusantium hic sint iusto exercitationem
+        voluptates illo rem saepe. Libero adipisci cum magni sapiente unde odio
+        maxime quo officiis accusantium! Cupiditate omnis blanditiis reiciendis
+        dicta nulla necessitatibus officia aliquid culpa repellat mollitia ipsum
+        ullam suscipit error velit maiores, quibusdam possimus veniam magnam.
+        Nesciunt error necessitatibus soluta nam saepe aspernatur quod voluptas
+        assumenda vel architecto molestiae quidem harum a delectus quas,
+        accusamus repellat sed iure odit minus voluptatem nulla dolor. Dolorum
+        assumenda quibusdam itaque dolorem incidunt perferendis et praesentium
+        qui optio vitae architecto nostrum omnis neque accusantium quam nam
+        aspernatur, iure in repellendus eius autem voluptates? Pariatur iure
+        labore magnam, quis architecto dolor quisquam itaque vero temporibus
+        quibusdam nulla rerum repellendus autem velit quo? Accusamus maiores
+        vero rerum quo velit recusandae asperiores eaque nobis, suscipit commodi
+        voluptatibus quas esse quasi beatae, non sequi porro ad ab sint!
+        Possimus expedita reprehenderit aut nostrum, adipisci repellendus
+        explicabo ducimus soluta officia quidem dolor illo amet debitis
+        voluptatum, consectetur perspiciatis doloremque. Aliquam numquam
+        reprehenderit eum consectetur corporis? Delectus, quia minima aliquam
+        quae, ut qui iusto sunt, labore maiores ipsa maxime fugit dolores?
+        Obcaecati recusandae natus consequatur voluptates ab fugit sint
+        incidunt, eum earum ea facere dicta, animi corrupti ut nemo itaque quod
+        vitae possimus neque quas veritatis eius. Totam eum reprehenderit alias
+        et quos suscipit libero ad odio voluptatem excepturi architecto nam
+        facilis nesciunt mollitia ab ipsum aut ex dolorem hic velit, fugit quod
+        vel eos sunt! Possimus at officia, minus laudantium soluta accusamus
+        dolore repellat molestias excepturi, blanditiis nesciunt nam illo
+        laborum a tenetur ut aliquam sunt illum saepe nulla quibusdam commodi
+        laboriosam cupiditate voluptas! Dicta iste aspernatur facilis cumque
+        adipisci, corporis molestiae et dolorem, distinctio reprehenderit quam
+        illum explicabo suscipit a non, laudantium in! Laboriosam, sint
+        inventore eum possimus quidem, rem dolorem veritatis magnam quaerat
+        ipsum exercitationem numquam. Impedit placeat fugiat sit animi quisquam,
+        quibusdam, iusto repudiandae cumque dolor mollitia quasi quam ullam
+        reprehenderit odit ipsam ad perspiciatis architecto! Beatae minima vel
+        magnam sequi provident, doloremque animi ipsam! Sit quis enim aliquid
+        praesentium ipsam. Quidem veritatis tempore, eligendi aperiam maiores
+        natus labore nostrum autem.
+      </h2>
+    </marquee>
+
+    <div class="box box1">
+      <h1>
+        BJP leader Sonali Phogat’s autopsy report says ‘multiple blunt force
+        injuries on body
+      </h1>
+      <p>
+        The Goa Police Thursday registered a murder case to probe the death of
+        BJP leader Sonali Phogat. The 42-year-old actor-turned-politician died
+        of a suspected heart attack in Goa on Tuesday with her family
+        questioning the circumstances leading to her death. Inspector General of
+        Police Omvir Singh Bishnoi said, “Based on the complaint filed by the
+        brother of the deceased, an FIR under Section 302 (murder) has been
+        registered at the Anjuna Police Station.”
+      </p>
+    </div>
+    <div class="box">
+      <h1>Out of power, Imran Khan continues to be powerful in Pakistan</h1>
+      <p>
+        Pakistan is on the edge again. Its economy is broken and Imran Khan is
+        threatening to set the house on fire if the army leadership does not
+        pave his way back to power. Three factors underlying its dysfunctional
+        state have brought about this situation. <br />
+        <br />
+        First, the Pakistani economy, prone to periodic crises because of its
+        structural problems — notably the burdens imposed by its adversarial
+        posture against India — has been hit hard by the pandemic and the
+        Ukraine war. Inflation is high, the Pakistan rupee has nosedived,
+        foreign exchange reserves are worth about six weeks’ imports and nearly
+        $40 billion borrowing is required to meet the external financing needs
+        in the current financial year.
+      </p>
+    </div>
+    <div class="box">
+      <h1>
+        BJP leader Sonali Phogat’s autopsy report says ‘multiple blunt force
+        injuries on body
+      </h1>
+      <p>
+        The Goa Police Thursday registered a murder case to probe the death of
+        BJP leader Sonali Phogat. The 42-year-old actor-turned-politician died
+        of a suspected heart attack in Goa on Tuesday with her family
+        questioning the circumstances leading to her death. Inspector General of
+        Police Omvir Singh Bishnoi said, “Based on the complaint filed by the
+        brother of the deceased, an FIR under Section 302 (murder) has been
+        registered at the Anjuna Police Station.”
+      </p>
+    </div>
+    <div class="box">
+      <h1>
+        BJP leader Sonali Phogat’s autopsy report says ‘multiple blunt force
+        injuries on body
+      </h1>
+      <p>
+        The Goa Police Thursday registered a murder case to probe the death of
+        BJP leader Sonali Phogat. The 42-year-old actor-turned-politician died
+        of a suspected heart attack in Goa on Tuesday with her family
+        questioning the circumstances leading to her death. Inspector General of
+        Police Omvir Singh Bishnoi said, “Based on the complaint filed by the
+        brother of the deceased, an FIR under Section 302 (murder) has been
+        registered at the Anjuna Police Station.”
+      </p>
+    </div>
+    <div class="box">
+      <h1>
+        BJP leader Sonali Phogat’s autopsy report says ‘multiple blunt force
+        injuries on body
+      </h1>
+      <p>
+        The Goa Police Thursday registered a murder case to probe the death of
+        BJP leader Sonali Phogat. The 42-year-old actor-turned-politician died
+        of a suspected heart attack in Goa on Tuesday with her family
+        questioning the circumstances leading to her death. Inspector General of
+        Police Omvir Singh Bishnoi said, “Based on the complaint filed by the
+        brother of the deceased, an FIR under Section 302 (murder) has been
+        registered at the Anjuna Police Station.”
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+.boxContainer {
+  background-color: yellow;
+  padding: 1rem;
+  display: flex;
+}
+
+.box {
+  background-color: rgb(29, 81, 240);
+  margin: 1rem;
+  padding: 1rem;
+  color: white;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* flex direction */
+#row {
+  flex-direction: row; /* default when we use display: flex;*/
+}
+
+#column {
+  flex-direction: column;
+}
+
+#rowreverse {
+  flex-direction: row-reverse;
+}
+
+#columnreverse {
+  flex-direction: column-reverse;
+}
+
+/* for rows */
+#boxes1 {
+  /* direction */
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+
+  /* spacing */
+  justify-content: space-around;
+}
+
+#boxes2 {
+  justify-content: space-evenly;
+}
+
+#boxes3 {
+  justify-content: space-between;
+}
+
+/* for columns */
+#boxes4 {
+  height: 90vh;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#boxes5 {
+  height: 90vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#boxes6 {
+  height: 90vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* align items with direction row */
+#boxes7 {
+  height: 90vh;
+  align-items: flex-start;
+}
+
+#boxes8 {
+  height: 90vh;
+  align-items: center;
+}
+
+#boxes9 {
+  height: 90vh;
+  align-items: flex-end;
+}
+
+/* align items with direction column */
+#boxes10 {
+  height: 90vh;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#boxes11 {
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+#boxes12 {
+  height: 90vh;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* for order property (flex items) */
+#box1 {
+  order: 2;
+}
+
+#box2 {
+  order: 3;
+}
+
+#box3 {
+  order: 1;
+}

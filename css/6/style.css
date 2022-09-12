@@ -1,0 +1,34 @@
+body {
+  background-color: aqua;
+  font-size: 3rem;
+}
+
+#type::after {
+  content: "Laptop/Desktop Computer";
+}
+
+/* ---------------- */
+@media all and (min-width: 600px) and (max-width: 720px) {
+  /* normal css code */
+
+  body {
+    background-color: red;
+    font-size: 2rem;
+  }
+
+  #type::after {
+    content: "Tablet";
+  }
+}
+
+/* small mobile device */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+    font-size: 1rem;
+  }
+
+  #type::after {
+    content: "Mobile/Smartphone";
+  }
+}

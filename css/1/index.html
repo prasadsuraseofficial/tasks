@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning CSS</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* 
+        1. this is a css comment 
+        2. I can write multiples lines of comment
+      */
+
+      h1 {
+        background-color: red !important;
+        color: yellow;
+        font-size: 50px;
+      }
+
+      #mainHeading {
+        color: white;
+      }
+
+      .heading {
+        color: aquamarine;
+        background-color: magenta;
+      }
+
+      #head {
+        border: 5px solid black;
+        color: hotpink;
+        background-color: darkgoldenrod;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1 style="font-size: 50px; color: red; background-color: yellow">
+      Learning CSS
+    </h1> -->
+
+    <h1 style="font-size: 50px; color: lightgreen; background-color: yellow">
+      Inline CSS
+    </h1>
+
+    <h1 id="mainHeading">MAIN HEADING (Internal CSS)</h1>
+    <h1>Learning CSS</h1>
+    <h1 class="heading">Learning CSS</h1>
+    <h1>Learning CSS</h1>
+    <h1 class="heading">Learning CSS</h1>
+    <h1 id="head" class="heading">Learning CSS Quickly</h1>
+    <h1 class="heading">Learning CSS</h1>
+    <p>Learning CSS</p>
+
+    <!-- <p>Learning CSS</p> -->
+
+    <p>Hello, this is designed by some external css file.</p>
+  </body>
+</html>
